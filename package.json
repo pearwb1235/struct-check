@@ -1,7 +1,7 @@
 {
-  "name": "struct-check",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@pearwb/struct-check",
+  "version": "0.1.0",
+  "description": "Check object struct and type",
   "main": "dist",
   "scripts": {
     "start": "babel-node -x .js,.ts src",
@@ -11,9 +11,14 @@
     "test": "lint-staged && jest --passWithNoTests",
     "prepare": "node prepare.js"
   },
+  "repository": "pearwb1235/struct-check",
   "keywords": [],
-  "author": "",
+  "author": "pearwb1235",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pearwb1235/struct-check/issues"
+  },
+  "homepage": "https://github.com/pearwb1235/struct-check",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
