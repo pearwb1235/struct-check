@@ -1,0 +1,1 @@
+{"version":3,"file":"arrayStruct.d.ts","sourceRoot":"","sources":["../../src/functions/arrayStruct.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAGhD,OAAO,EAAE,UAAU,EAAE,MAAM,QAAQ,CAAC;AAEpC,wBAAgB,kBAAkB,CAAC,CAAC,EAClC,KAAK,EAAE,UAAU,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,EAC1B,OAAO,UAAQ,GACd,aAAa,CAAC,CAAC,EAAE,CAAC,CASpB"}
