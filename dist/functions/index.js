@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true,
+  value: true
 });
 
 var _arrayStruct = require("./arrayStruct");
@@ -13,7 +13,7 @@ Object.keys(_arrayStruct).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _arrayStruct[key];
-    },
+    }
   });
 });
 
@@ -26,7 +26,7 @@ Object.keys(_type).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _type[key];
-    },
+    }
   });
 });
 //# sourceMappingURL=index.js.map

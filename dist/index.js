@@ -3,31 +3,31 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 Object.defineProperty(exports, "__esModule", {
-  value: true,
+  value: true
 });
 var _exportNames = {
   Checker: true,
   CheckerChunk: true,
-  CheckerRecord: true,
+  CheckerRecord: true
 };
 exports["default"] = checkStruct;
 Object.defineProperty(exports, "Checker", {
   enumerable: true,
   get: function get() {
     return _checker["default"];
-  },
+  }
 });
 Object.defineProperty(exports, "CheckerChunk", {
   enumerable: true,
   get: function get() {
     return _checkerChunk["default"];
-  },
+  }
 });
 Object.defineProperty(exports, "CheckerRecord", {
   enumerable: true,
   get: function get() {
     return _record["default"];
-  },
+  }
 });
 
 var _checker = _interopRequireDefault(require("./checker"));
@@ -42,7 +42,7 @@ Object.keys(_functions).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _functions[key];
-    },
+    }
   });
 });
 

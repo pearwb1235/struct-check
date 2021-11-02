@@ -1,11 +1,5 @@
 import { CheckFunction, Rule } from "~/checker";
 import { Enumerable, Type } from "~/type";
-export declare function typeChecker(
-  require: boolean,
-  ...types: Type[]
-): CheckFunction<unknown>;
-export declare function typeStructChecker<T>(
-  require: boolean,
-  typeWithRule: Record<Type, Enumerable<Rule<T>>>
-): CheckFunction<T>;
+export declare function typeChecker(require: boolean, ...types: Type[]): CheckFunction<unknown>;
+export declare function typeStructChecker<T>(require: boolean, typeWithRule: Record<Type, Enumerable<Rule<T>>>): CheckFunction<T>;
 //# sourceMappingURL=type.d.ts.map
