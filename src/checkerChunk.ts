@@ -27,6 +27,7 @@ export default class CheckerChunk<T> {
   private check(value: T, rule: Rule<T>) {
     switch (typeof rule) {
       case "object":
+        if (rule === null) break;
         if (typeof value !== "object" || Array.isArray(value))
           return this.record.add("Must to be an object");
         return new Checker(rule, value as Record<string, unknown>, this.record)
@@ -43,8 +44,8 @@ export default class CheckerChunk<T> {
           return this.record.add("Checker function match failed.");
         return true;
       default:
-        throw new Error("The argument `rule` is not valid.");
+        break;
     }
-    return true;
+    throw new Error("The argument `rule` is not valid.");
   }
 }
