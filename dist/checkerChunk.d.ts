@@ -8,4 +8,3 @@ export default class CheckerChunk<T> {
     constructor(rules: Enumerable<Rule<T>>, value: T, record: CheckerRecord, meta?: Record<string, unknown>);
     private check;
 }
-//# sourceMappingURL=checkerChunk.d.ts.map

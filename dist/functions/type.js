@@ -70,4 +70,3 @@ function typeStructChecker(require, typeWithRule) {
     return record;
   };
 }
-//# sourceMappingURL=type.js.map

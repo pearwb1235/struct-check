@@ -140,6 +140,7 @@ dist
 
 # Develop File
 .husky
+src
 .babelrc.json
 .eslintrc.json
 .gitattributes

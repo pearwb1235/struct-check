@@ -14,4 +14,3 @@ export default class Checker<T extends Record<string, unknown>> {
     private addRecord;
     private check;
 }
-//# sourceMappingURL=checker.d.ts.map

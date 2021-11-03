@@ -6,4 +6,3 @@ export default class CheckerRecord {
     add(message: string, node?: string): boolean;
     get(): Record<string, string>;
 }
-//# sourceMappingURL=record.d.ts.map

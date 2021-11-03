@@ -1,1 +1,0 @@
-{"version":3,"file":"switchStruct.d.ts","sourceRoot":"","sources":["../../src/functions/switchStruct.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAIhD,wBAAgB,mBAAmB,CAAC,CAAC,EAAE,CAAC,SAAS,MAAM,EACrD,QAAQ,EAAE,CAAC,KAAK,EAAE,CAAC,KAAK,CAAC,EACzB,KAAK,EAAE;KAAG,CAAC,IAAI,CAAC,GAAG,IAAI,CAAC,CAAC,CAAC;CAAE,GAC3B,aAAa,CAAC,CAAC,CAAC,CASlB"}

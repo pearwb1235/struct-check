@@ -4,4 +4,3 @@ export * from "./functions";
 export { default as Checker } from "./checker";
 export { default as CheckerChunk } from "./checkerChunk";
 export { default as CheckerRecord } from "./record";
-//# sourceMappingURL=index.d.ts.map

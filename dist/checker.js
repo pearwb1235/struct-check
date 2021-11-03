@@ -115,4 +115,3 @@ var Checker = /*#__PURE__*/function () {
 }();
 
 exports["default"] = Checker;
-//# sourceMappingURL=checker.js.map

@@ -41,4 +41,3 @@ function arrayStructChecker(rules) {
     return record;
   };
 }
-//# sourceMappingURL=arrayStruct.js.map

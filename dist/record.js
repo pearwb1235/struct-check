@@ -116,4 +116,3 @@ var CheckerRecord = /*#__PURE__*/function () {
 }();
 
 exports["default"] = CheckerRecord;
-//# sourceMappingURL=record.js.map

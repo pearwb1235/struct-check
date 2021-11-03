@@ -22,4 +22,3 @@ function switchStructChecker(switchFn, rules) {
     } else return "Is not a valid value";
   };
 }
-//# sourceMappingURL=switchStruct.js.map

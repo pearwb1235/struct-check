@@ -42,4 +42,3 @@ Object.keys(_type).forEach(function (key) {
     }
   });
 });
-//# sourceMappingURL=index.js.map

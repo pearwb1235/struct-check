@@ -54,4 +54,3 @@ function checkStruct(obj, checkRule) {
   var checker = new _checker["default"](checkRule, obj);
   return checker.record.get();
 }
-//# sourceMappingURL=index.js.map
