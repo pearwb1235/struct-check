@@ -12,7 +12,7 @@ export function typeChecker(
       require === false &&
       (!meta.has || value === null || value === undefined)
     )
-      return "";
+      return true;
     if (!meta.has) return "Require.";
     if (!Array.isArray(types) || types.length === 0) return true;
     for (const type of types) {
@@ -31,7 +31,7 @@ export function typeChecker(
 
 export function typeStructChecker<T>(
   require: boolean,
-  typeWithRule: Record<Type, Enumerable<Rule<T>>>
+  typeWithRule: Partial<Record<Type, Enumerable<Rule<T>>>>
 ): CheckFunction<T> {
   const typeCheck = typeChecker(
     require,
@@ -44,9 +44,12 @@ export function typeStructChecker<T>(
       (typeof result !== "string" && !result)
     )
       return result;
-    const record = new CheckerRecord();
-    const rules = typeWithRule[typeof value];
-    new CheckerChunk(rules, value, record, { has: true });
-    return record;
+    const type = Array.isArray(value) ? "array" : typeof value;
+    if (type in typeWithRule) {
+      const record = new CheckerRecord();
+      const rules = typeWithRule[type];
+      new CheckerChunk(rules, value, record, { has: true });
+      return record;
+    } else return true;
   };
 }
