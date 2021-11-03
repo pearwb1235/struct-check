@@ -62,6 +62,7 @@ var CheckerChunk = /*#__PURE__*/function () {
     value: function check(value, rule) {
       switch ((0, _typeof2["default"])(rule)) {
         case "object":
+          if (rule === null) break;
           if ((0, _typeof2["default"])(value) !== "object" || Array.isArray(value)) return this.record.add("Must to be an object");
           return new _checker["default"](rule, value, this.record).success;
 
@@ -83,10 +84,10 @@ var CheckerChunk = /*#__PURE__*/function () {
           return true;
 
         default:
-          throw new Error("The argument `rule` is not valid.");
+          break;
       }
 
-      return true;
+      throw new Error("The argument `rule` is not valid.");
     }
   }]);
   return CheckerChunk;

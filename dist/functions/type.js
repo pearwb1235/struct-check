@@ -28,7 +28,7 @@ function typeChecker(require) {
   }
 
   return function (value, meta) {
-    if (require === false && (!meta.has || value === null || value === undefined)) return "";
+    if (require === false && (!meta.has || value === null || value === undefined)) return true;
     if (!meta.has) return "Require.";
     if (!Array.isArray(types) || types.length === 0) return true;
 
@@ -64,11 +64,15 @@ function typeStructChecker(require, typeWithRule) {
   return function (value, meta) {
     var result = typeCheck(value, meta);
     if (typeof result === "string" && result.length > 0 || typeof result !== "string" && !result) return result;
-    var record = new _record["default"]();
-    var rules = typeWithRule[(0, _typeof2["default"])(value)];
-    new _checkerChunk["default"](rules, value, record, {
-      has: true
-    });
-    return record;
+    var type = Array.isArray(value) ? "array" : (0, _typeof2["default"])(value);
+
+    if (type in typeWithRule) {
+      var record = new _record["default"]();
+      var rules = typeWithRule[type];
+      new _checkerChunk["default"](rules, value, record, {
+        has: true
+      });
+      return record;
+    } else return true;
   };
 }
