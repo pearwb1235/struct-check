@@ -66,7 +66,9 @@ function typeStructChecker(require, typeWithRule) {
     if (typeof result === "string" && result.length > 0 || typeof result !== "string" && !result) return result;
     var record = new _record["default"]();
     var rules = typeWithRule[(0, _typeof2["default"])(value)];
-    new _checkerChunk["default"](rules, value, record);
+    new _checkerChunk["default"](rules, value, record, {
+      has: true
+    });
     return record;
   };
 }

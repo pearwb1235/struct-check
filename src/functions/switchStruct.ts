@@ -10,7 +10,7 @@ export function switchStructChecker<T, U extends string>(
     const ruleKey = switchFn(value);
     if (ruleKey in rules) {
       const record = new CheckerRecord();
-      new CheckerChunk(rules[ruleKey], value, record);
+      new CheckerChunk(rules[ruleKey], value, record, { has: true });
       return record;
     } else return "Is not a valid value";
   };

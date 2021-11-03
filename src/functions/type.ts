@@ -46,7 +46,7 @@ export function typeStructChecker<T>(
       return result;
     const record = new CheckerRecord();
     const rules = typeWithRule[typeof value];
-    new CheckerChunk(rules, value, record);
+    new CheckerChunk(rules, value, record, { has: true });
     return record;
   };
 }

@@ -17,7 +17,9 @@ function switchStructChecker(switchFn, rules) {
 
     if (ruleKey in rules) {
       var record = new _record["default"]();
-      new _checkerChunk["default"](rules[ruleKey], value, record);
+      new _checkerChunk["default"](rules[ruleKey], value, record, {
+        has: true
+      });
       return record;
     } else return "Is not a valid value";
   };

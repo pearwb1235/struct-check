@@ -30,7 +30,9 @@ function arrayStructChecker(rules) {
     try {
       for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var index = _step.value;
-        new _checkerChunk["default"](rules, value[index], record);
+        new _checkerChunk["default"](rules, value[index], record, {
+          has: true
+        });
       }
     } catch (err) {
       _iterator.e(err);

@@ -11,7 +11,7 @@ export function arrayStructChecker<T>(
     if (!Array.isArray(value)) return !require;
     const record = new CheckerRecord();
     for (const index of record.node(value)) {
-      new CheckerChunk(rules, value[index], record);
+      new CheckerChunk(rules, value[index], record, { has: true });
     }
     return record;
   };
