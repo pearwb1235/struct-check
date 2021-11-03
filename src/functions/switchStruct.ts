@@ -1,10 +1,11 @@
 import { CheckFunction, Rule } from "~/checker";
 import CheckerChunk from "~/checkerChunk";
 import CheckerRecord from "~/record";
+import { Enumerable } from "~/type";
 
 export function switchStructChecker<T, U extends string>(
   switchFn: (value: T) => U,
-  rules: { [K in U]: Rule<T> }
+  rules: { [K in U]: Enumerable<Rule<T>> }
 ): CheckFunction<T> {
   return (value) => {
     const ruleKey = switchFn(value);
